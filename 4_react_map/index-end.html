@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <div id="content"></div>
+    <script type="text/babel">
+    const studentList = [
+        {firstName: "First 1", lastName: "Last 1"},
+        {firstName: "First 2", lastName: "Last 2"},
+        {firstName: "First 3", lastName: "Last 3"}
+    ];
+    
+    const App = ({students}) => (
+            <div>
+                {students.map((student, i) =>
+                    <h1 key={i}>{student.firstName} {student.lastName}</h1>
+            )}
+            </div>
+    )
+
+    ReactDOM.render(
+        <App students={studentList}/>,
+        document.getElementById("content")
+    );
+
+    </script>
+</body>
+</html>

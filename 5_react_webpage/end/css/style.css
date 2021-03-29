@@ -1,0 +1,21 @@
+* {
+	box-sizing:border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	margin: 3% 0 2%;
+	text-align: center;
+}
+
+.slide {
+	margin: 0 auto;
+	width: 50vw;
+}
+
+.slide img {
+	max-width: 100%;
+}

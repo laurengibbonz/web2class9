@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <div id="content"></div>
+    <script type="text/babel">
+    const Student = ({name}) => <h1>{name}</h1>;
+
+    const App = () => (
+        <div>
+            <Student name="Test" />
+            <Student name="Test1" />
+            <Student name="Test1" />
+        </div>
+    );
+
+    ReactDOM.render(
+        <App />,
+        document.getElementById('content')
+    );
+    </script>
+</body>
+</html>
